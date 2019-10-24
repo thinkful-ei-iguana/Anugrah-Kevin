@@ -16,9 +16,9 @@ $('.thumbnail').on('click', e => {
 $(function () {
   $('.thumbnail').on('click', e => {
     e.preventDefault();
-    });
-  let thumbSrcAttr = $(event.currentTarget).find('img').attr('src');
-  let thumbAltAttr = $(event.currentTarget).find('img').attr('alt');
-  $('.hero img').attr('src', thumbSrcAttr);
-  $('.hero img').attr('alt', thumbAltAttr);
+    let thumbSrcAttr = $(event.currentTarget).find('img').attr('src');
+    let thumbAltAttr = $(event.currentTarget).find('img').attr('alt');
+    $('.hero img').attr('src', thumbSrcAttr);
+    $('.hero img').attr('alt', thumbAltAttr);
+  });
 });
